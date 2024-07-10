@@ -45,7 +45,7 @@ top = -1
 stack = [None for _ in range(MAX_SIZE)]
 
 def is_empty() -> bool:
-    """Checks if the stack is empty of not.
+    """Checks if the stack is empty or not.
 
     Returns:
         bool: True if the stack is empty else False.
@@ -67,7 +67,7 @@ def push(val: int) -> None:
         val (int): Takes an integer value as an argument.
 
     Raises:
-        StackOverFlowError.
+        StackOverFlowError
     """
     global top, stack
     if is_full():
@@ -81,10 +81,10 @@ def pop() -> int:
     """Pops an element from the stack.
 
     Raises:
-        StackUnderFlowError.
+        StackUnderFlowError
 
     Returns:
-        int: Returns the popped item, if necessary.
+        int: Returns the popped item.
     """
     global top
     if is_empty():
@@ -97,10 +97,10 @@ def pop() -> int:
         return val
     
 def peek() -> int:
-    """To peek on the Top Of Stack element.
+    """To peek on the TOS element.
 
     Returns:
-        int: The element on the top of the stack.
+        int: The TOS element.
     """
     if is_empty():
         print("Stack is empty, nothing to peek.")
