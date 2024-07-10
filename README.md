@@ -1,0 +1,1 @@
+This repository demonstrates all the **Data Structures and Algorithms** concepts using the Python programming language.
